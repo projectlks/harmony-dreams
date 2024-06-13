@@ -47,6 +47,15 @@ export default {
         "right-to-left":
           "right-to-left 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards",
         zoom: "zoom 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards"
+      },
+      backgroundImage: {
+        "custom-img": "url('./img/img1.jfif')"
+      },
+      colors: {
+        bg: "#f0f8ff"
+      },
+      "scroll-smooth": {
+        scrollBehavior: "smooth"
       }
     }
   },
