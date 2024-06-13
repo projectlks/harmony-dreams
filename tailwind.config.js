@@ -49,7 +49,7 @@ export default {
         zoom: "zoom 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards"
       },
       backgroundImage: {
-        "custom-img": "url('./img/img1.jfif')"
+        "custom-img": "url('./src/assets/img/img4.jfif')"
       },
       colors: {
         bg: "#f0f8ff"

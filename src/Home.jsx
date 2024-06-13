@@ -10,7 +10,7 @@ import React from 'react'
   return (
     <a
       href={`#${value.toLowerCase()}`}
-      className="hover:text-red-500 md:w-auto md:rounded-full w-[300px] hover:bg-red-300 px-3 py-2 cursor-pointer transition duration-300 ease-in-out"
+      className="hover:text-blue-700 md:w-auto md:rounded-md w-[300px] text-gray-100 hover:bg-blue-300 px-3 py-2 cursor-pointer transition duration-300 ease-in-out"
     >
       {value}
     </a>
@@ -53,11 +53,14 @@ let value = ["Home", "About", "Services", 'Contact'];
   },[])
 
   return (
-    <div >
-      <nav className="flex fixed top-1 left-0 right-0 w-full md:w-[90%] mx-auto z-[1000] shadow-md animate-top-to-bottom justify-between bg-opacity-50 items-center rounded-md bg-white p-4">
+    <div>
+      <nav className="flex fixed top-1 left-0 right-0  border w-[90%] mx-auto z-[1000] shadow-md animate-top-to-bottom justify-between bg-opacity-50 items-center rounded-md bg-black  p-4">
         <div data-aos="slide-right" className="flex items-center">
           <img src={logo} alt="Harmony Dreams Logo" className="h-10 mr-2" />
-          <span className="text-xl text-black font-bold">Harmony Dreams</span>
+          <span className="text-xl flex first-letter:text-2xl text-gray-100 font-bold">
+            <h1 className="first-letter:text-2xl ">Harmony</h1>
+            <h1 className="text-blue-700 first-letter:text-2xl ml-1">Dreams</h1>
+          </span>
         </div>
         <div>
           <ul
@@ -92,28 +95,30 @@ let value = ["Home", "About", "Services", 'Contact'];
 
       <section
         id="home"
-        className="w-full mt-40 bg-custom-img bg-no-repeat bg-right relative transition-all overflow-hidden md:w-[90%] mx-auto h-screen p-4"
+        className="w-full flex  bg-backgroundImage  bg-center bg-cover bg-fixed bg-custom-img bg-no-repeat  relative transition-all overflow-hidden  mx-auto min-h-screen "
       >
-        <div className="flex text-black items-center justify-center text-center h-full transition-opacity duration-1000">
-          <span className="inline-block w-1/2">
-            <h1 className="text-5xl font-bold mb-4 animate-left-to-right">
+        <div className="flex w-full md:p-10 py-[200px] md:py-[200px] p-4 text-gray-200 bg-black bg-opacity-60 items-center flex-col  md:flex-row justify-center text-center h-full transition-opacity duration-1000">
+          <span className="inline-block w-full md:w-1/2">
+            <h1 className="text-5xl first-letter:text-7xl font-bold mb-4 animate-left-to-right">
               Welcome to Harmony Dreams
             </h1>
-            <p className="text-2xl mb-8 animate-fadeIn animate-right-to-left delay-200">
+            <p className="text-2xl mb-8 first-letter:text-4xl animate-fadeIn animate-right-to-left delay-200">
               Your dream vacation is just a click away
             </p>
-            <button className="bg-blue-700 animate-zoom text-white px-6 py-2 rounded-md text-lg font-semibold transition duration-300 transform hover:scale-105">
+            {/* <button className="hover:bg-opacity-100 transition-all bg-blue-700 bg-opacity-50 border text-black border-blue-700 animate-zoom hover:text-white px-6 hover:px-10 py-2 rounded-md text-lg font-semibold hover:font-semibold ">
               Get Started
-            </button>
+            </button> */}
           </span>
-          <div className=" w-1/2">
-            <span className="inline-block m-auto w-[70%] p-3 border rounded shadow-lg border-black overflow-hidden">
+          <div className="w-full md:w-1/2 ">
+            <span className="inline-block  m-auto bg-gray-200 w-[70%] p-3 animate-zoom rounded shadow-lg overflow-hidden">
               <img
                 src={img}
-                className="w-full transition-transform duration-300 ease-in-out hover:scale-110"
+                className="w-full figure transition-transform duration-300 ease-in-out hover:scale-110"
                 alt="img"
               />
             </span>
+
+          
           </div>
         </div>
       </section>
@@ -123,17 +128,17 @@ let value = ["Home", "About", "Services", 'Contact'];
         id="about"
         className="w-full overflow-x-hidden md:mt-40 flex-col md:flex-row flex"
       >
-        <div className="md:w-1/2 w-full p-10 md:h-screen">
-          <h1
-            data-aos="slide-right"
-            className="text-5xl w-full my-10 text-center font-extrabold"
-          >
+        <div
+          data-aos="slide-right"
+          className="md:w-1/2 w-full h-screen md:border-l-2 p-10"
+        >
+          <div className="w-full h-full bg-gray-800 animate-pulse"></div>
+        </div>
+        <div data-aos="slide-left" className="md:w-1/2 w-full p-10 md:h-screen">
+          <h1 className="text-5xl w-full my-10 text-center font-extrabold">
             About Me
           </h1>
-          <p
-            data-aos="slide-right"
-            className="w-full pl-6 font-bold text-gray-800 mb-6"
-          >
+          <p className="w-full pl-6 text-pretty font-bold text-gray-800 mb-6">
             Seeking a challenging position as a Designer where I can utilize my
             technical skills and attention to detail to contribute to the
             creation of accurate and precise technical drawings. With a strong
@@ -143,10 +148,7 @@ let value = ["Home", "About", "Services", 'Contact'];
             functionally sound designs ensures that I can meet and exceed
             project expectations.
           </p>
-          <p
-            data-aos="slide-right"
-            className="w-full pl-6 font-bold text-gray-800 mb-6"
-          >
+          <p className="w-full pl-6 font-bold text-gray-800 mb-6">
             I aim to collaborate with a dynamic team to develop innovative
             projects that push the boundaries of creativity and precision. My
             keen eye for detail and passion for design drive my dedication to
@@ -154,12 +156,6 @@ let value = ["Home", "About", "Services", 'Contact'];
             expertise in design and technical drawing to support the goals of a
             forward-thinking organization and contribute to its success.
           </p>
-        </div>
-        <div
-          data-aos="slide-left"
-          className="md:w-1/2 w-full h-screen md:border-l-2 p-10"
-        >
-          <div className="w-full h-full bg-gray-800 animate-pulse"></div>
         </div>
       </section>
 

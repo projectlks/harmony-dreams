@@ -24,3 +24,22 @@
     background: gray;
     border-radius: 4px
 }
+
+.hover14 .figure:hover::before {
+    -webkit-animation: shine .75s;
+    animation: shine .75s;
+}
+
+@-webkit-keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+/* 
+<div class="hover14 column"><div><figure><img src="https://picsum.photos/300/200?image=244" /></figure></div></div> */
