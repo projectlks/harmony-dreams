@@ -5,6 +5,7 @@ import 'aos/dist/aos.css'
 import img from './assets/img/img1.jfif'
 
 import React from 'react'
+import Something from "./components/Something";
 
  function MenuValue({value}) {
   return (
@@ -95,7 +96,7 @@ let value = ["Home", "About", "Services", 'Contact'];
 
       <section
         id="home"
-        className="w-full flex  bg-backgroundImage  bg-center bg-cover bg-fixed bg-custom-img bg-no-repeat  relative transition-all overflow-hidden  mx-auto min-h-screen "
+        className="w-full flex bg-[url('./assets/img/img4.jfif')] bg-backgroundImage  bg-center bg-cover bg-fixed  bg-no-repeat  relative transition-all overflow-hidden  mx-auto min-h-screen "
       >
         <div className="flex w-full md:p-10 py-[200px] md:py-[200px] p-4 text-gray-200 bg-black bg-opacity-60 items-center flex-col  md:flex-row justify-center text-center h-full transition-opacity duration-1000">
           <span className="inline-block w-full md:w-1/2">
@@ -122,7 +123,7 @@ let value = ["Home", "About", "Services", 'Contact'];
           </div>
         </div>
       </section>
-
+<Something/>
       {/* about */}
       <section
         id="about"
