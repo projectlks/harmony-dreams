@@ -37,6 +37,20 @@ export default {
         zoom: {
           "0%": { opacity: 0, transform: "scale(1.5)" },
           "100%": { opacity: 1, transform: "scale(1)" }
+        },
+        shine: {
+          "0%": {
+            left: "-50%",
+            opacity: "0"
+          },
+          "50%": {
+            left: "25%",
+            opacity: ".5"
+          },
+          "100%": {
+            left: "100%",
+            opacity: "0"
+          }
         }
       },
       animation: {
@@ -46,16 +60,14 @@ export default {
           "left-to-right 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards",
         "right-to-left":
           "right-to-left 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards",
-        zoom: "zoom 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards"
+        zoom: "zoom 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards",
+        shine: "shine 3s cubic-bezier(0.075, 0.82, 0.165, 1) forwards"
       },
       backgroundImage: {
         "custom-img": "url('./src/assets/img/img4.jfif')"
       },
       colors: {
         bg: "#f0f8ff"
-      },
-      "scroll-smooth": {
-        scrollBehavior: "smooth"
       }
     }
   },

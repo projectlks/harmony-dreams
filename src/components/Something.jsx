@@ -1,105 +1,62 @@
 import React from "react";
 
-function Card({ title, paragraph, children, ...props }) {
+function Card({ title, paragraph, icon, ...props }) {
   return (
-    <div
-
-      {...props}
-      className="flex flex-col w-[90%] mx-auto md:w-full bg-blue-100 hover:bg-blue-200 transition-all hover:shadow-md  hover:scale-110 cursor-pointer rounded-md px-5 py-8 items-center"
-    >
-      <i className="p-4 rounded-full bg-gray-300">{children}</i>
-      <h2 className="text-2xl font-bold m-3">{title}</h2>
-      <p className="text-center text-pretty">{paragraph}</p>
+    <div data-aos="slide-left" className="w-full h-auto">
+      <div
+        {...props}
+        className="flex flex-col h-full shadow transition-all shine-overlay w-[90%] mx-auto md:w-full bg-gradient-to-tl border-2 hover:border-none border-blue-400 hover:from-emerald-200 hover:to-blue-400 hover:bg-blue-200 hover:shadow-md hover:scale-110 cursor-pointer rounded-md px-5 pb-10 py-8 items-center"
+      >
+        <i
+          className={`${icon} text-blue-500 text-center w-auto p-5 bg-stone-300 border border-black rounded-full text-4xl`}
+        ></i>
+        <h2 className="text-2xl font-extrabold m-3">{title}</h2>
+        <p className="text-center text-pretty">{paragraph}</p>
+        <div className="shine "></div>
+      </div>
     </div>
   );
 }
 
 export default function Something() {
   return (
-    <section className="w-full overflow-x-hidden md:w-[90%] mx-auto">
+    <section className="w-full p-3 overflow-x-hidden md:w-[90%] mx-auto">
       <h1
         data-aos="slide-left"
         className="w-full text-center text-5xl mt-10 mb-3 font-bold"
       >
-        What I do?
+        What I Do?
       </h1>
       <p
         data-aos="slide-left"
         className="xl:w-[800px] w-[90%] font-semibold text-base text-center mb-7 text-pretty mx-auto"
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sed
-        excepturi, officia optio odio omnis, eaque, repellat totam iste harum
-        necessitatibus.
+        My work encompasses a broad spectrum of skills and expertise. Whether
+        it's effective communication, unwavering reliability, a commitment to
+        quality, or fostering family values, I strive to excel in every aspect.
       </p>
-      <div
-        data-aos="slide-right"
-        className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 w-full py-6 gap-10"
-      >
+
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 w-full py-6 gap-10">
         <Card
+          icon="fa-regular fa-comments"
           title="Communication"
-          paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat tempora suscipit quasi animi nulla molestias."
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            className="size-10 text-blue-500 text-center w-full"
-          >
-            <path d="M3.505 2.365A41.369 41.369 0 0 1 9 2c1.863 0 3.697.124 5.495.365 1.247.167 2.18 1.108 2.435 2.268a4.45 4.45 0 0 0-.577-.069 43.141 43.141 0 0 0-4.706 0C9.229 4.696 7.5 6.727 7.5 8.998v2.24c0 1.413.67 2.735 1.76 3.562l-2.98 2.98A.75.75 0 0 1 5 17.25v-3.443c-.501-.048-1-.106-1.495-.172C2.033 13.438 1 12.162 1 10.72V5.28c0-1.441 1.033-2.717 2.505-2.914Z" />
-            <path d="M14 6c-.762 0-1.52.02-2.271.062C10.157 6.148 9 7.472 9 8.998v2.24c0 1.519 1.147 2.839 2.71 2.935.214.013.428.024.642.034.2.009.385.09.518.224l2.35 2.35a.75.75 0 0 0 1.28-.531v-2.07c1.453-.195 2.5-1.463 2.5-2.915V8.998c0-1.526-1.157-2.85-2.729-2.936A41.645 41.645 0 0 0 14 6Z" />
-          </svg>
-        </Card>
+          paragraph="Clear and effective communication is at the heart of everything we do. We ensure all parties are on the same page to achieve success."
+        />
         <Card
+          icon="fa-solid fa-shield-halved"
           title="Reliability"
-          paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat tempora suscipit magnam culpa officia quasi animi nulla molestias."
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            className="size-5"
-          >
-            <path
-              fillRule="evenodd"
-              d="M9.661 2.237a.531.531 0 0 1 .678 0 11.947 11.947 0 0 0 7.078 2.749.5.5 0 0 1 .479.425c.069.52.104 1.05.104 1.59 0 5.162-3.26 9.563-7.834 11.256a.48.48 0 0 1-.332 0C5.26 16.564 2 12.163 2 7c0-.538.035-1.069.104-1.589a.5.5 0 0 1 .48-.425 11.947 11.947 0 0 0 7.077-2.75Zm4.196 5.954a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z"
-              clipRule="evenodd"
-            />
-          </svg>
-        </Card>
+          paragraph="Our commitment to reliability means you can count on us to deliver consistent, high-quality results every time."
+        />
         <Card
+          icon="fa-solid fa-medal"
           title="Quality First"
-          paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sed excepturi, officia optio odio omnis, eaque."
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            className="size-5"
-          >
-            <path
-              fillRule="evenodd"
-              d="M9.661 2.237a.531.531 0 0 1 .678 0 11.947 11.947 0 0 0 7.078 2.749.5.5 0 0 1 .479.425c.069.52.104 1.05.104 1.59 0 5.162-3.26 9.563-7.834 11.256a.48.48 0 0 1-.332 0C5.26 16.564 2 12.163 2 7c0-.538.035-1.069.104-1.589a.5.5 0 0 1 .48-.425 11.947 11.947 0 0 0 7.077-2.75Zm4.196 5.954a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z"
-              clipRule="evenodd"
-            />
-          </svg>
-        </Card>
+          paragraph="Quality is our top priority. We strive to exceed expectations by paying attention to the smallest details in every project."
+        />
         <Card
+          icon="fa-solid fa-people-group"
           title="Families"
-          paragraph="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat tempora."
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            className="size-5"
-          >
-            <path
-              fillRule="evenodd"
-              d="M9.661 2.237a.531.531 0 0 1 .678 0 11.947 11.947 0 0 0 7.078 2.749.5.5 0 0 1 .479.425c.069.52.104 1.05.104 1.59 0 5.162-3.26 9.563-7.834 11.256a.48.48 0 0 1-.332 0C5.26 16.564 2 12.163 2 7c0-.538.035-1.069.104-1.589a.5.5 0 0 1 .48-.425 11.947 11.947 0 0 0 7.077-2.75Zm4.196 5.954a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z"
-              clipRule="evenodd"
-            />
-          </svg>
-        </Card>
+          paragraph="We value families and work to create solutions that benefit everyone. Our family-first approach ensures inclusivity and care in all we do."
+        />
       </div>
     </section>
   );
