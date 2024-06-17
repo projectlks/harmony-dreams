@@ -3,10 +3,12 @@ import { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import img from "./assets/img/img1.jfif";
+
 import React from "react";
 import Something from "./components/Something";
 import "./index.css";
 import AboutMe from "./components/AboutMe";
+import Project from "./components/Project";
 
 function MenuValue({ value }) {
   return (
@@ -30,7 +32,7 @@ function App() {
     };
 
     window.addEventListener("resize", handleResize);
-    if (screenWidth > 500) {
+    if (screenWidth > 768) {
       setIsShow(true);
     } else {
       setIsShow(false);
@@ -90,19 +92,19 @@ function App() {
 
       <section
         id="home"
-        className="w-full flex bg-[url('./assets/img/img4.jfif')]  bg-backgroundImage bg-center bg-cover bg-fixed bg-no-repeat relative transition-all overflow-hidden mx-auto min-h-screen"
+        className="w-full scroll-smooth flex bg-[url('./assets/img/img4.jfif')]  bg-backgroundImage bg-center bg-cover bg-fixed bg-no-repeat relative transition-all overflow-hidden mx-auto min-h-screen"
       >
-        <div className="flex w-full md:p-10 py-[200px] md:py-[200px] p-4 text-gray-200 min-h-screen bg-black bg-opacity-60 items-center flex-col md:flex-row justify-center text-center h-full transition-opacity duration-1000">
-          <span className="inline-block w-full md:w-1/2 ">
-            <h1 className="text-5xl first-letter:text-7xl font-bold mb-4 animate-left-to-right">
+        <div className="flex  w-full md:p-10 py-[200px] md:py-[200px] p-4 text-gray-200 min-h-screen bg-black bg-opacity-60 items-center flex-col xl:flex-row justify-center text-center h-full transition-opacity duration-1000">
+          <span className="inline-block  w-full xl:w-1/2 ">
+            <h1 className="text-[min(12vw,2.5rem)] first-letter:text-[min(12vw,5rem)] font-bold mb-4 animate-left-to-right">
               Welcome to Harmony Dreams
             </h1>
-            <p className="text-2xl mb-8 first-letter:text-4xl animate-fadeIn animate-right-to-left delay-200">
+            <p className="text-2xl mb-8  animate-fadeIn animate-right-to-left delay-200">
               Your dream vacation is just a click away
             </p>
           </span>
 
-          <div className="w-full animate-zoom md:w-1/2">
+          <div className="w-full animate-zoom xl:w-1/2">
             <div className="card m-auto bg-red-800 overflow:hidden w-3/5 shine-overlay">
               <img
                 className="card-bg top-0 absolute left-0 "
@@ -116,23 +118,7 @@ function App() {
       </section>
       <Something />
       <AboutMe />
-      <section
-        id="services"
-        className="w-full h-auto xl:h-[700px] overflow-y-hidden my-10 grid mx-auto gap-6 mb-10 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:w-[80%]"
-      >
-        <div
-          data-aos="slide-up"
-          className="w-[90%] md:col-span-2 xl:col-span-1 mx-auto h-[500px] animate-pulse bg-red-700"
-        ></div>
-        <div
-          data-aos="slide-up"
-          className="w-[90%] mt-20 mx-auto h-[500px] animate-pulse bg-red-700"
-        ></div>
-        <div
-          data-aos="slide-up"
-          className="w-[90%] mt-40 mx-auto h-[500px] animate-pulse bg-red-700"
-        ></div>
-      </section>
+ <Project/>
     </div>
   );
 }

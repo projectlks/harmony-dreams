@@ -4,22 +4,24 @@ export default function AboutMe() {
   return (
     <section
       id="about"
-      className="w-full overflow-x-hidden md:mt-40 flex-col md:flex-row items-center flex"
+      className="w-full overflow-x-hidden  md:w-[90%] mx-auto  md:mt-40 flex-col md:flex-row items-center flex"
     >
-      <div
-        data-aos="slide-right"
-        className="relative 
-       after:rounded-md md:w-1/2  p-10 after:content-[''] after:inline-block m-20 after:inset-16
-        after:absolute after:border-2 after:border-cyan-400  w-full h-auto  "
-      >
-        <img
-        className='bg-contain rounded-lg h-full shadow-black shadow-sm'
-          src="https://www.vistaresidences.com.ph/assets/hiring4.jpg"
-          alt="this is photo"
-        />
+      <div className=" md:w-1/2  p-20 w-full h-auto  ">
+        <div
+          data-aos="slide-right"
+          className="relative 
+       after:rounded-md  after:content-[''] after:inline-block  after:inset-5
+        after:absolute after:border-2 after:border-cyan-400 w-full"
+        >
+          <img
+            className="bg-contain rounded-lg   shadow-black shadow-sm"
+            src="https://media.istockphoto.com/id/1192512817/photo/pretty-young-cross-armed-female-engineer-in-blue-workwear-and-safety-helmet.jpg?s=1024x1024&w=is&k=20&c=R3Q5vtsBMNGzG5RTigcv89a6OzkcIpiC3iatxgcDtgQ="
+            alt="this is photo"
+          />
+        </div>
       </div>
 
-      <div data-aos="slide-left" className="md:w-1/2 w-full md:p-10 p-7">
+      <div data-aos="slide-left" className="md:w-1/2  w-full md:p-10 p-7">
         <h1 className="text-5xl w-full my-10 text-center font-extrabold">
           About Me
         </h1>
