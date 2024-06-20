@@ -20,8 +20,9 @@
 }
 
 *::-webkit-scrollbar-thumb {
-    background: gray;
+    background: #e63946;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 /* Animation */
@@ -95,7 +96,7 @@
         content: "";
         position: absolute;
         inset: 10px;
-        border: 2px solid rgba(0, 213, 241, 0.781);
+        border: 2px solid #457b9d;
         z-index: 1;
         border-radius: 10px;
     }

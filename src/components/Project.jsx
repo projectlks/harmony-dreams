@@ -7,7 +7,8 @@ import img6 from "../assets/img/img6.jfif";
 function Card({ title, text, img, index, ...prop }) {
   return (
     <div
-      className={`p-5 ${prop.className} md:p-0   h-auto shadow bg-gray-100 mx-auto`}
+      data-aos="zoom-in"
+      className={`p-5 ${prop.className} md:p-0 bg-gray-100  h-auto shadow-darkBlue shadow-md mx-auto`}
     >
       <img src={img} className="w-full" alt="" />
       <span className="inline-block  p-3">
@@ -22,7 +23,7 @@ function Card({ title, text, img, index, ...prop }) {
 
 export default function Project() {
   return (
-    <section className=" p-3 min-h-screen pb-10 w-[90%] mx-auto">
+    <section id='services' className=" p-3 min-h-screen pb-10 overflow-hidden w-[90%] mx-auto">
       <h1
         data-aos="slide-left"
         className="w-full text-center text-5xl mt-10 mb-3 font-bold"

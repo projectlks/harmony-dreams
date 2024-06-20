@@ -67,7 +67,11 @@ export default {
         "custom-img": "url('./src/assets/img/img4.jfif')"
       },
       colors: {
-        bg: "#f0f8ff"
+        backgroundColor: "#f1faee",
+        softBlue: "#a8dadc",
+        midBlue: "#457b9d",
+        darkBlue: "#1d3557",
+        redColor: "#e63946"
       }
     }
   },

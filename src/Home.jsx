@@ -9,12 +9,13 @@ import Something from "./components/Something";
 import "./index.css";
 import AboutMe from "./components/AboutMe";
 import Project from "./components/Project";
+import Contact from "./components/Contact";
 
 function MenuValue({ value }) {
   return (
     <a
       href={`#${value.toLowerCase()}`}
-      className="hover:text-blue-700 md:w-auto md:rounded-md w-[300px] text-gray-100 hover:bg-blue-300 px-3 py-2 cursor-pointer transition duration-300 ease-in-out"
+      className="hover:text-redColor md:w-auto md:rounded-md w-[300px] text-gray-100 hover:bg-darkBlue px-3 py-2 cursor-pointer transition duration-300 ease-in-out"
     >
       {value}
     </a>
@@ -50,13 +51,13 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <section>
       <nav className="flex fixed top-1 left-0 right-0 border w-[90%] mx-auto z-[1000] shadow-md animate-top-to-bottom justify-between bg-opacity-50 items-center rounded-md bg-black p-4">
         <div data-aos="slide-right" className="flex items-center">
           <img src={logo} alt="Harmony Dreams Logo" className="h-10 mr-2" />
           <span className="text-xl flex first-letter:text-2xl text-gray-100 font-bold">
             <h1 className="first-letter:text-2xl ">Harmony</h1>
-            <h1 className="text-blue-700 first-letter:text-2xl ml-1">Dreams</h1>
+            <h1 className="text-redColor first-letter:text-2xl ml-1">Dreams</h1>
           </span>
         </div>
         <div>
@@ -118,8 +119,12 @@ function App() {
       </section>
       <Something />
       <AboutMe />
- <Project/>
-    </div>
+      <Project />
+      <Contact/>
+      <footer className="w-full h-[100px] bg-darkBlue text-backgroundColor">
+        This is footer
+      </footer>
+    </section>
   );
 }
 

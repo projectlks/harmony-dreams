@@ -3,14 +3,20 @@ import React from "react";
 function Card({ title, paragraph, icon, ...props }) {
   return (
     <div data-aos="slide-left" className="w-full h-auto">
-      <div
-        {...props}
-        className="flex flex-col h-full shadow transition-all shine-overlay w-[90%] mx-auto md:w-full bg-gradient-to-tl border-2 hover:border-none border-blue-400 hover:from-emerald-200 hover:to-blue-400 hover:bg-blue-200 hover:shadow-md hover:scale-110 cursor-pointer rounded-md px-5 pb-10 py-8 items-center"
-      >
-        <i
-          className={`${icon} text-blue-500 text-center w-auto p-5 bg-stone-300 border border-black rounded-full text-4xl`}
-        ></i>
-        <h2 className="text-2xl font-extrabold m-3">{title}</h2>
+ <div
+  {...props}
+  className="flex flex-col h-full shadow-darkBlue transition-all shine-overlay w-[90%] mx-auto md:w-full border-2 border-midBlue hover:border-hidden bg-gradient-to-tr hover:from-backgroundColor hover:to-softBlue hover:shadow-md hover:scale-110 cursor-pointer rounded-md px-5 pb-10 py-8 items-center group select-none
+        
+  after:rounded-sm after:content-[''] after:inline-block after:inset-2
+  after:absolute hover:after:border after:border-midBlue
+  "
+>
+  <i
+    className={`${icon} transition-all group-hover:bg-backgroundColor text-midBlue text-center w-auto p-5 bg-stone-300 border border-midBlue rounded-full text-4xl`}
+  ></i>
+
+
+        <h2 className="text-2xl text-darkBlue font-extrabold m-3">{title}</h2>
         <p className="text-center text-pretty">{paragraph}</p>
         <div className="shine "></div>
       </div>
@@ -20,7 +26,7 @@ function Card({ title, paragraph, icon, ...props }) {
 
 export default function Something() {
   return (
-    <section className="w-full p-3 overflow-x-hidden md:w-[90%] mx-auto">
+    <section className="w-full p-3  md:w-[90%] mx-auto">
       <h1
         data-aos="slide-left"
         className="w-full text-center text-5xl mt-10 mb-3 font-bold"
