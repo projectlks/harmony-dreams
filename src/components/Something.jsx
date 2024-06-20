@@ -26,7 +26,7 @@ function Card({ title, paragraph, icon, ...props }) {
 
 export default function Something() {
   return (
-    <section className="w-full p-3  md:w-[90%] mx-auto">
+    <section className="w-full p-3  overflow-hidden md:w-[90%] mx-auto">
       <h1
         data-aos="slide-left"
         className="w-full text-center text-5xl mt-10 mb-3 font-bold"

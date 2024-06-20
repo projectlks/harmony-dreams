@@ -12,10 +12,10 @@ function Card({ title, text, img, index, ...prop }) {
     >
       <img src={img} className="w-full" alt="" />
       <span className="inline-block  p-3">
-        <h1 className="text-[min(8vh,3rem)] mx-auto text-left p-5 font-bold">
+        <h1 className="text-[min(8vh,3rem)] mx-auto text-left md:p-5 font-bold">
           0{index}.{title}
         </h1>
-        <p className="text-pretty p-5">{text}</p>
+        <p className="text-pretty md:p-5">{text}</p>
       </span>
     </div>
   );

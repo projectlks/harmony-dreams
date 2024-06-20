@@ -4,7 +4,7 @@ export default function AboutMe() {
   return (
     <section
       id="about"
-      className="w-full overflow-x-hidden  md:w-[90%] mx-auto  md:mt-40 flex-col md:flex-row items-center flex"
+      className="w-full border-y border-darkBlue overflow-x-hidden  md:w-[90%] mx-auto  md:mt-40 flex-col md:flex-row items-center flex"
     >
       <div className=" md:w-1/2  p-20 w-full h-auto  ">
         <div

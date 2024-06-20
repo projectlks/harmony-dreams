@@ -120,9 +120,26 @@ function App() {
       <Something />
       <AboutMe />
       <Project />
-      <Contact/>
-      <footer className="w-full h-[100px] bg-darkBlue text-backgroundColor">
-        This is footer
+      <Contact />
+      <footer className="bg-gray-800 text-white py-4">
+        <div className="container mx-auto px-4">
+          <div className="flex justify-between items-center">
+            <div className="text-sm">
+              © 2024 Your Company. All rights reserved.
+            </div>
+            <div className="flex space-x-4">
+              <a href="###" className="text-gray-400 hover:text-white">
+                Privacy Policy
+              </a>
+              <a href="###" className="text-gray-400 hover:text-white">
+                Terms of Service
+              </a>
+              <a href="#contact" className="text-gray-400 hover:text-white">
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </div>
       </footer>
     </section>
   );
