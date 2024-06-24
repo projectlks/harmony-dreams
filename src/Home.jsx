@@ -1,8 +1,8 @@
-import logo from "./assets/Harmony Dreams.jpg";
+import logo from "./assets/img/logo.png";
 import { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import img from "./assets/img/img1.jfif";
+import right from "./assets/img/right.png";
 
 import React from "react";
 import Something from "./components/Something";
@@ -51,13 +51,13 @@ function App() {
   }, []);
 
   return (
-    <section>
+    <section >
       <nav className="flex fixed top-1 left-0 right-0 border w-[90%] mx-auto z-[1000] shadow-md animate-top-to-bottom justify-between bg-opacity-50 items-center rounded-md bg-black p-4">
         <div data-aos="slide-right" className="flex items-center">
           <img src={logo} alt="Harmony Dreams Logo" className="h-10 mr-2" />
-          <span className="text-xl flex first-letter:text-2xl text-gray-100 font-bold">
-            <h1 className="first-letter:text-2xl ">Harmony</h1>
-            <h1 className="text-redColor first-letter:text-2xl ml-1">Dreams</h1>
+          <span className="text-xl belleza-regular flex first-letter:text-2xl text-gray-100 font-bold">
+            <h1 className="first-letter:text-2xl ">HARMONY </h1>
+            <h1 className="text-redColor first-letter:text-2xl ml-1">DREAMS</h1>
           </span>
         </div>
         <div>
@@ -93,7 +93,7 @@ function App() {
 
       <section
         id="home"
-        className="w-full scroll-smooth flex bg-[url('./assets/img/img4.jfif')]  bg-backgroundImage bg-center bg-cover bg-fixed bg-no-repeat relative transition-all overflow-hidden mx-auto min-h-screen"
+        className="w-full scroll-smooth flex bg-[url('./assets/img/bg.jpg')]  bg-backgroundImage bg-center bg-cover bg-fixed bg-no-repeat relative transition-all overflow-hidden mx-auto min-h-screen"
       >
         <div className="flex  w-full md:p-10 py-[200px] md:py-[200px] p-4 text-gray-200 min-h-screen bg-black bg-opacity-60 items-center flex-col xl:flex-row justify-center text-center h-full transition-opacity duration-1000">
           <span className="inline-block  w-full xl:w-1/2 ">
@@ -101,7 +101,7 @@ function App() {
               Welcome to Harmony Dreams
             </h1>
             <p className="text-2xl mb-8  animate-fadeIn animate-right-to-left delay-200">
-              Your dream vacation is just a click away
+              Dreams your future with us.
             </p>
           </span>
 
@@ -109,7 +109,7 @@ function App() {
             <div className="card m-auto bg-red-800 overflow:hidden w-3/5 shine-overlay">
               <img
                 className="card-bg top-0 absolute left-0 "
-                src={img}
+                src={right}
                 alt="image"
               />
               <div className="shine"></div>

@@ -31,37 +31,37 @@ export default function Something() {
         data-aos="slide-left"
         className="w-full text-center text-5xl mt-10 mb-3 font-bold"
       >
-        What I Do?
+        What we do?
       </h1>
       <p
         data-aos="slide-left"
         className="xl:w-[800px] w-[90%] font-semibold text-base text-center mb-7 text-pretty mx-auto"
       >
-        My work encompasses a broad spectrum of skills and expertise. Whether
-        it's effective communication, unwavering reliability, a commitment to
-        quality, or fostering family values, I strive to excel in every aspect.
+        Seeking a challenging position as Designer where we can utilize our
+        technical skills and attention to detail to contribute to the creation
+        of accurate and precise technical drawings.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 w-full py-6 gap-10">
         <Card
           icon="fa-regular fa-comments"
-          title="Communication"
-          paragraph="Clear and effective communication is at the heart of everything we do. We ensure all parties are on the same page to achieve success."
+          title="Planning"
+          paragraph="Careful consideration of aesthetics, functionality, and environmental harmony is essential in designing exterior house spaces."
         />
         <Card
           icon="fa-solid fa-shield-halved"
-          title="Reliability"
-          paragraph="Our commitment to reliability means you can count on us to deliver consistent, high-quality results every time."
+          title="Design"
+          paragraph="The focus is on simplicity and functionality, incorporating clean lines, neutral palettes, and natural materials to achieve an elegant and cohesive outdoor space"
         />
         <Card
           icon="fa-solid fa-medal"
-          title="Quality First"
-          paragraph="Quality is our top priority. We strive to exceed expectations by paying attention to the smallest details in every project."
+          title="Visualization"
+          paragraph="Effective visualization not only communicates design concepts but also ensures that the final result aligns with the client's vision and functional requirements."
         />
         <Card
           icon="fa-solid fa-people-group"
-          title="Families"
-          paragraph="We value families and work to create solutions that benefit everyone. Our family-first approach ensures inclusivity and care in all we do."
+          title="Animation"
+          paragraph="We presentate with dynamic movement and interactive elements, showcasing how clean lines, neutral colors, and natural materials combine for a harmonious outdoor environment."
         />
       </div>
     </section>
