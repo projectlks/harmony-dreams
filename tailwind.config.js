@@ -72,6 +72,11 @@ export default {
         midBlue: "#457b9d",
         darkBlue: "#1d3557",
         redColor: "#e63946"
+      },
+      screens: {
+        600: "600px" ,
+        360: '360px',
+        400: '400px'
       }
     }
   },
