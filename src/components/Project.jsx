@@ -72,7 +72,7 @@ export default function Project() {
   return (
     <section
       id="services"
-      className=" p-3  pb-10 w-[90%] mx-auto"
+      className=" p-3 overflow-x-hidden pb-10 w-[90%] mx-auto"
     >
       <h1
         data-aos="slide-left"
@@ -96,7 +96,7 @@ export default function Project() {
             className={`${
               data.imgDesign === "vertical"
                 ? "flex md:flex-row   w-full flex-col"
-                : "md:w-2/3 w-full h-full xl:h-[200px] block"
+                : "md:w-2/3  w-full h-auto xl:h-[200px] block"
             }`}
             key={data.id}
             title={data.title}
