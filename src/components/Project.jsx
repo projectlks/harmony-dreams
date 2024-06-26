@@ -11,7 +11,7 @@ function Card({ title, text, index, children, ...prop }) {
   return (
     <div
       data-aos="zoom-in"
-      className={`p-5 ${prop.className} mb-[150px] md:p-0 bg-gray-100  shadow-darkBlue shadow-md mx-auto`}
+      className={`p-5 ${prop.className} mb-[150px] md:p-0 bg-[#AEAEAE] bg-opacity-50 shadow-darkBlue shadow-md mx-auto`}
     >
       {children}
       <span className="inline-block w-full xl:shadow-darkBlue xl:shadow-md bg-inherit p-3">
