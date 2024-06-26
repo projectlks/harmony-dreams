@@ -9,7 +9,6 @@ import Something from "./components/Something";
 import "./index.css";
 import AboutMe from "./components/AboutMe";
 import Project from "./components/Project";
-import Contact from "./components/Contact";
 
 import bg from './assets/img/phone.png'
 import Footer from "./components/Footer";
@@ -18,37 +17,12 @@ function MenuValue({ value }) {
   return (
     <a
       href={`#${value.toLowerCase()}`}
-      className="hover:text-redColor md:w-auto md:rounded-md w-[300px] text-gray-100 hover:bg-darkBlue px-3 py-2 cursor-pointer transition duration-300 ease-in-out"
+      className="hover:text-redColor md:w-auto md:rounded-md w-[300px] text-darkBlue hover:bg-darkBlue px-3 py-2 cursor-pointer transition duration-300 ease-in-out"
     >
       {value}
     </a>
   );
 }
-
-// function ContactToConnected ({title, num1, num2, icon, link1, link2}) {
-//   return (
-//     <div className="flex flex-col md:flex-row h-full items-center px-0 space-x-3 xl:px-4">
-//       <i
-//         className={`xl:text-5xl w-full  justify-center text-center text-3xl mb-3 ${icon}`}
-//       ></i>
-//       <span className="flex flex-col items-center">
-//         <h1 className="text-base md:text-xl w-full text-start hidden md:block font-bold">
-//           {title}
-//         </h1>
-//         <a className="block" href={link1}>
-//           <p className="md:text-sm text-xs w-full text-start tracking-tighter md:tracking-normal hover:underline whitespace-nowrap hover:text-midBlue">
-//             {num1}
-//           </p>
-//         </a>
-//         <a className="block" href={link2}>
-//           <p className="md:text-sm text-xs w-full text-start tracking-tighter md:tracking-normal hover:underline hover:text-midBlue">
-//             {num2}
-//           </p>
-//         </a>
-//       </span>
-//     </div>
-//   );
-// }
 
 function App() {
   const [isShow, setIsShow] = useState(true);
@@ -134,8 +108,8 @@ function App() {
           </span>
 
           <div className="w-full animate-zoom xl:w-1/2">
-            <div className=" m-auto shine-overlay bg-red-800 w-3/5  ">
-              <img className=" w-full h-auto" src={right} alt="image" />
+            <div className=" m-auto rounded-xl shine-overlay shadow-darkBlue shadow-md  w-3/5  ">
+              <img className=" w-full  h-auto  " src={right} alt="image" />
               <div className="shine"></div>
             </div>
           </div>
@@ -144,8 +118,8 @@ function App() {
       <Something />
       <AboutMe />
       <Project />
-      {/* <Contact /> */}
-      <Footer/>
+
+      <Footer />
     </section>
   );
 }

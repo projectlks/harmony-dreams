@@ -1,78 +1,12 @@
-import React from 'react'
-import img1 from "../assets/img/img1.jpg";
-import img2 from "../assets/img/img2.jpg";
-import img3 from "../assets/img/img3.jpg";
-import img4 from "../assets/img/img4.jpg";
-import img5 from "../assets/img/img5.jpg";
-import img6 from "../assets/img/img6.jpg";
-
-
-function Card({ title, text, index, children, ...prop }) {
-  return (
-    <div
-      data-aos="zoom-in"
-      className={`p-5 ${prop.className} mb-[150px] md:p-0 bg-[#AEAEAE] bg-opacity-50 shadow-darkBlue shadow-md mx-auto`}
-    >
-      {children}
-      <span className="inline-block w-full xl:shadow-darkBlue xl:shadow-md bg-inherit p-3">
-        <h1 className="text-[min(5vh,3rem)] w-[90%]  text-start mx-auto   font-bold">
-          0{index}.{title}
-        </h1>
-        <p className="text-pretty md:p-5">{text}</p>
-      </span>
-    </div>
-  );
-}
+import React from "react";
+import File from "../assets/array/File";
+import Card from "./Card";
 
 export default function Project() {
-
-  const File = [
-    {
-      id: 1,
-      title: "Minimalist",
-      text: "The use of vertical aluminium slats, large glass panels, and sleek concrete elements reflects the blending of functionality and style prevalent in Vietnamese urban design.",
-      imgSrc: img2,
-      imgDesign: "vertical"
-    },
-    {
-      id: 2,
-      title: "Modern",
-      text: "The building features clean lines, large windows, and a combination of materials that give it a contemporary appearance.",
-      imgSrc: img1
-    },
-
-    {
-      id: 3,
-      title: "Contemporary",
-      text: "Modern design embraces clean lines and simplicity, focusing on essential elements that contribute to a clutter-free environment.",
-      imgSrc: img3
-    },
-
-    {
-      id: 4,
-      title: "Functional",
-      text: "Spaces are designed with functionality and efficiency in mind, optimizing every square foot to serve a purpose without unnecessary ornamentation.",
-      imgSrc: img5,
-      imgDesign: "vertical"
-    },
-    {
-      id: 5,
-      title: "Sustain",
-      text: "Furniture and decor are selected for their functional elegance, often characterized by clean geometric shapes and a focus on quality craftsmanship rather than ornate details",
-      imgSrc: img6,
-      imgDesign: "vertical"
-    },
-    {
-      id: 6,
-      title: "Chic",
-      text: "Modern elegance with clean lines, geometric shapes, and a minimalist approach to landscaping.",
-      imgSrc: img4
-    }
-  ];
   return (
     <section
       id="services"
-      className=" p-3 overflow-x-hidden pb-10 w-[90%] mx-auto"
+      className="p-3 overflow-x-hidden pb-10 md:w-[70%] xl:w-[90%] w-[90%] mx-auto"
     >
       <h1
         data-aos="slide-left"
@@ -90,13 +24,12 @@ export default function Project() {
       </p>
 
       <div className="grid grid-cols-1 h-auto xl:grid-cols-2 w-full py-6 gap-10">
- 
         {File.map((data, index) => (
           <Card
             className={`${
               data.imgDesign === "vertical"
-                ? "flex md:flex-row   w-full flex-col"
-                : "md:w-2/3  w-full h-auto xl:h-[200px] block"
+                ? "flex md:flex-row w-full flex-col"
+                : "md:w-2/3 w-full h-auto xl:h-[200px] block"
             }`}
             key={data.id}
             title={data.title}
